@@ -12,6 +12,8 @@ int** createMatrix(int m, int n)
 	int j;
 	int k = 0;
 	int** mat = (int**)malloc(m * sizeof(int*));
+	printf("SIZE: %d\n", sizeof(int));
+	printf("SIZE: %d\n", sizeof(int*));
 	int* p_mat;
 	
 	
@@ -33,7 +35,7 @@ void printMatrix(int** mat, int m, int n)
 	{
 		for(j = 0; j<n; j++)
 		{
-			printf("%d ", (*mat)[i*n+j]);
+			printf("%d ", mat[i][j]);
 		}
 		printf("\n");
 	}
@@ -47,15 +49,15 @@ void main()
 	////////////////////////////////////////////////////////////////////////////
 	// Blok koda koji sluzi da manifestaciju problema ucini verovatnijom
 	// Otkomentarisati ukoliko se ne javi problem  prilikom pokretanja primera
-	//int* temp1 = (int*)malloc(TEMP_SIZE*sizeof(int));
-	//int* temp2 = (int*)malloc(TEMP_SIZE*sizeof(int));
-	//int i;
-	//for(i = 0; i<TEMP_SIZE; i++)
-	//{
-	//	temp2[i] = 0xdedababa;
-	//}
-	//
-	//free(temp1);
+	// int* temp1 = (int*)malloc(TEMP_SIZE*sizeof(int));
+	// int* temp2 = (int*)malloc(TEMP_SIZE*sizeof(int));
+	// int i;
+	// for(i = 0; i<TEMP_SIZE; i++)
+	// {
+	// 	temp2[i] = 0xdedababa;
+	// }
+	
+	// free(temp1);
 	///////////////////////////////////////////////////////////////////////////
 	
 	mat1 = createMatrix(M, N);

@@ -18,14 +18,13 @@ void main()
 
 	printf("%d\n%d\n\n", uninit_var1, uninit_var2);
 
-	//
 	uninit_buff2 = (int*)malloc(ARRAY_SIZE * sizeof(int));
 	for (i = 0; i < ARRAY_SIZE; i++)
 	{
 		uninit_buff2[i] = i;
 	}
 	free(uninit_buff2);
-
+	int* a = (int*)malloc(sizeof(int));
 	uninit_buff2 = (int*)malloc(ARRAY_SIZE * sizeof(int));
 	uninit_buff3 = (int*)calloc(ARRAY_SIZE, sizeof(int));
 
