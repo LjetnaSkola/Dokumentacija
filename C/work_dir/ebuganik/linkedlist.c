@@ -132,7 +132,7 @@ int main()
 	printf("Linked list after deletion: ");
 	printLinkedList(head);
 	/* Free linked list */
-	delete(&head);
+	deleteLinkedList(&head);
 	return 0;
 
 
