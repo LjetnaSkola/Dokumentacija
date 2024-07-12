@@ -2,8 +2,8 @@
 #include <stdint.h>
 #include <inttypes.h>
 
-//#pragma pack(push)  /* push current alignment to stack */
-//#pragma pack(1)     /* set alignment to 1 byte boundary */
+// #pragma pack(push)  /* push current alignment to stack */
+// #pragma pack(push, 2)     /* set alignment to 1 byte boundary */
 
 typedef struct _example_struct
 {
@@ -14,7 +14,7 @@ typedef struct _example_struct
 //} example_struct;
 } __attribute__ ((packed)) example_struct;
 
-//#pragma pack(pop)   /* restore original alignment from stack */
+// #pragma pack(pop)   /* restore original alignment from stack */
 
 
 int main(void)

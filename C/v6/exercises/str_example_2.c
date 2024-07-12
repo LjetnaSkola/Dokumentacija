@@ -5,7 +5,7 @@
 
 typedef struct _my_struct
 {
-	char text[20];
+	char text[100];
 	uint_least16_t num;
 } my_struct;
 
@@ -15,6 +15,7 @@ int main()
 	char strBuf[100] = "This text is too long for struct member text";
 	
 	ms.num = 55555;
+	printf("SIZE OF STRUCT: %d\n", sizeof(my_struct));
 
 	// Error situation (stack problem)
 	printf("\nCopying longer string to shorter\n");
@@ -43,11 +44,10 @@ int main()
 	char* token = strtok(s, " ");
 	printf("after 1st step, string is: \"%s\" \n", s);
 	
-	printf("token: %s\n", token);
 	while (token != NULL)
 	{
-	    token = strtok(NULL, " ");
 	    printf("token: %s\n", token);
+	    token = strtok(NULL, " ");
 	}
 
 	return 1;
