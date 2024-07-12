@@ -1,4 +1,4 @@
-1. Write a Bash script which accepts  as input and displays the greeting "Welcome (name)"
+1. Write a Bash script which accepts (name) as input and displays the greeting "Welcome (name)"
 
 2. Your task is to use for loops to display only odd natural numbers from A to B.
 
