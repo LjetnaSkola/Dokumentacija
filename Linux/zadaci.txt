@@ -1,8 +1,57 @@
 1. Write a Bash script which accepts (name) as input and displays the greeting "Welcome (name)"
 
+	echo "Enter name (name) :" 
+	read name
+
+	echo "Greeting message :"
+	echo "Welcome $name"
+
 2. Your task is to use for loops to display only odd natural numbers from A to B.
 
+	echo "Enter variable A (A) :"
+	read A
+	echo "Enter variable B (B) :"
+	read B
+	
+    echo "Odd numbers from $A to $B are:"
+    for (( i=A; i<=B; i++ ))
+    do
+      if (( i % 2 != 0 ))
+      then
+        echo $i
+      fi
+    done	
+
+
 3. Write a shell script that accepts a number greater than 3, let's say N. The script prints the Fibonacci sequence with N numbers in the sequence.
+
+    echo "Enter a number greater than 3 (N) :"
+    read N
+    
+    if [N -lt 4]; then
+        echo "Number must be greater than 3!"
+        exit 1
+    fi
+    
+    function fibonacci {
+    
+        local num=$1
+        a=0
+        b=1
+    
+        echo "Fibonacci array of $num numbers:"
+        
+        for (( i=0; i<num; i++ ))
+        do
+            echo -n "$a "
+            fn=$((a + b))
+            a=$b
+            b=$fn
+        done
+        echo
+    }
+
+    fibonacci $N
 
 4. Write a shell script that accepts a non-negative number and shows its factorial as output.
 

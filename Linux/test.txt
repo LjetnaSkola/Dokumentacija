@@ -1,0 +1,8 @@
+Ovo je testni fajl.
+U njemu se nalaze
+neke 
+linije
+teksta. Cilje je
+da se procita njjegov sadrzaj
+kako bi se validirao
+ispravan rad programa.
