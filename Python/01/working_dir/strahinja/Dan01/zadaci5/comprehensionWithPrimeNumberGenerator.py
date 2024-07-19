@@ -1,4 +1,4 @@
-from primeNumberGenerator import prime_from_to
+from zadaci4.primeNumberGenerator import prime_from_to
 
 
 def is_sum_of_digits_divisible_by7(x):

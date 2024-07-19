@@ -1,6 +1,3 @@
-from primeNumberGenerator import prime_from_to
-
-
 def dodaj_pdv(dictIn):
     return {x: y * 1.17 for x, y in dictIn.items()}
 
