@@ -6,10 +6,10 @@ def isPalindrome(s):
 # orig = "Emanuela"
 # rev = isPalindrome(orig)
 
-orig = "ana"
-rev = isPalindrome(orig)
+#orig = "ana"
+#rev = isPalindrome(orig)
 
-if rev:
-    print("Yes")
-else:
-    print("No")
+#if rev:
+#   print("Yes")
+#else:
+#    print("No")

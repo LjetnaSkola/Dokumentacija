@@ -7,6 +7,6 @@ def string_to_ascii(string):
         ascii_arr.append(ord(char))
     return ascii_arr
 
-string = "Emanuela"
-new_arr = string_to_ascii(string)
-print(f"String '{string}' as ASCII: {new_arr}")
+#string = "Emanuela"
+#new_arr = string_to_ascii(string)
+#print(f"String '{string}' as ASCII: {new_arr}")

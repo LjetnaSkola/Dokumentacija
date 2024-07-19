@@ -8,6 +8,6 @@ def array_to_ascii(array):
     return ascii_arr
 
 
-num_arr = [100,200,1000,1.5]
-num_arr = array_to_ascii(num_arr)
-print(num_arr)
+#num_arr = [100,200,1000,1.5]
+#num_arr = array_to_ascii(num_arr)
+#print(num_arr)
