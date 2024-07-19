@@ -1,11 +1,13 @@
+def remove_duplicates_and_return_list(original_list):
+    # Print original list
+    print("The original list is:", original_list)
 
-# Initializing list1
+    # Remove duplicates and create new list
+    unique_list = list(set(original_list))
 
-list1=[1,2,3,4,4,5,1]
-print("The original list1 is: " + str(list1))
+    # Print content of unique list
+    print("The list without duplicates is:", unique_list)
+    return unique_list
 
-# Remove duplicates and make new list2
-list2=list(set(list1))
-
-# Print content of list2
-print("The original list2 is: " + str(list2))
+#list1 = [1, 2, 3, 4, 4, 5, 1]
+#remove_duplicates_and_return_list(list1)

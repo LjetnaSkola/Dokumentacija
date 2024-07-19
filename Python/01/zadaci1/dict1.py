@@ -1,10 +1,14 @@
-
 from collections import OrderedDict
+def reverse_order_of_dictionary(dictionary):
+    # Print original dictionary
+    print("The original dictionary:", dictionary)
 
-# Initialize dictionary
-dict = {'who' : 19, 'are' : 6, 'you' : 99}
-print("The original dictionary : " + str(dict))
+    # Reverse the order using OrderedDict and reversed()
+    reversed_dict = OrderedDict(reversed(list(dictionary.items())))
 
-# Using OrderedDict() + reversed() + items()
-res = OrderedDict(reversed(list(dict.items())))
-print("The reversed order dictionary : " + str(res)) 
+    # Print the reversed order dictionary
+    print("The reversed order dictionary:", reversed_dict)
+    return reversed_dict
+
+#dict_example = {'who': 19, 'are': 6, 'you': 99}
+#reverse_order_of_dictionary(dict_example)
