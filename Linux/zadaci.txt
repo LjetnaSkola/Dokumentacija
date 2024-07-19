@@ -1,0 +1,43 @@
+1. Write a Bash script which accepts (name) as input and displays the greeting "Welcome (name)"
+
+2. Your task is to use for loops to display only odd natural numbers from A to B.
+
+3. Write a shell script that accepts a number greater than 3, let's say N. The script prints the Fibonacci sequence with N numbers in the sequence.
+
+4. Write a shell script that accepts a non-negative number and shows its factorial as output.
+
+5. Given M lines of input, print the Nth character from each line as a new line of output. It is guaranteed that each of the M lines of input will have a Nth character.
+Input:
+Hello
+World
+how are you
+
+Output: In case N=3
+l
+r
+w
+
+6. Display the first 5 lines of an input file.
+7. Print file in reverse order
+8. Display the last 4 characters of an input file.
+9. Given a list of countries, each on a new line, your task is to read them into an array. Then, concatenate the array with itself (twice) - so that you have a total of three repetitions of the original array - and then display the entire concatenated array, with a space between each of the countries' names.
+Input:
+Namibia
+Nauru
+Nepal
+Netherlands
+NewZealand
+Nicaragua
+Niger
+Nigeria
+NorthKorea
+Norway
+OUTPUT:
+Namibia Nauru Nepal Netherlands NewZealand Nicaragua Niger Nigeria NorthKorea Norway Namibia Nauru Nepal Netherlands NewZealand Nicaragua Niger Nigeria NorthKorea Norway Namibia Nauru Nepal Netherlands NewZealand Nicaragua Niger Nigeria NorthKorea Norway
+
+10. Given a text file, which will be piped to your command through STDIN, use grep to display all those lines which contain any of the following words in them:
+the
+that
+then
+those
+The search should not be sensitive to case. Display only those lines of an input file, which contain the required words
