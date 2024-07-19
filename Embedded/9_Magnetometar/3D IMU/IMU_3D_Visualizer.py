@@ -8,18 +8,25 @@ import socket
 
 # Communication mode
 USB = 1
-COMMUNICATION = USB
+WIFI = 2
+COMMUNICATION = USB  # Change to WIFI if using WiFi
 
 # Global variables
 serial_connection = None
 vtk_render_window = None
 vtk_actors = None
 last_quat = None
-board_id = 1
+wifi = None
+listen_port = 8090
+client = None
+client_addr = None
+board_id = -1
 
 def get_orientation_data():
     if COMMUNICATION == USB:
         data = serial_connection.readline().decode().strip().split()
+    elif COMMUNICATION == WIFI:
+        data = client.recv(26).decode().strip().split()
     print("Received data:", data)  # Debugging line
     return data
 
@@ -27,9 +34,9 @@ def information_callback(self, obj):
     rotate_data = get_orientation_data()
     # print("Rotate data:", rotate_data)  # Debugging line
 
-    if len(rotate_data) == 4:
+    if len(rotate_data) == 5:
         global last_quat
-        last_quat = vtk.vtkQuaternionf(float(rotate_data[0]), float(rotate_data[1]), float(rotate_data[2]), float(rotate_data[3]))
+        last_quat = vtk.vtkQuaternionf(float(rotate_data[1]), float(rotate_data[2]), float(rotate_data[3]), float(rotate_data[4]))
         # print("Quaternion:", last_quat)  # Debugging line
 
         t = [[0]*3 for _ in range(3)]
@@ -59,24 +66,24 @@ def information_callback(self, obj):
         print("Invalid data length:", len(rotate_data))  # Debugging line
 
 def connect_usb():
-    print("\n*Searching for plugged in USB ports...")
-    ports = list(serial.tools.list_ports.comports())
+    print("\n*Searching for plugged in Arduino USB ports...")
+    arduino_ports = list(serial.tools.list_ports.comports())
     port_number = 0
 
     print("*Found COM ports:")
-    for i, port in enumerate(ports):
+    for i, port in enumerate(arduino_ports):
         print(i, "\t", port)
 
-    if not ports:
-        print("*No boards were found to be plugged in - stopping debugger")
+    if not arduino_ports:
+        print("*No Arduino boards were found to be plugged in - stopping debugger")
         sys.exit()
-    elif len(ports) > 1:
+    elif len(arduino_ports) > 1:
         port_number = int(input("*Enter number from above: "))
 
-    print("*Using board port", ports[port_number].device)
+    print("*Using board port", arduino_ports[port_number].device)
     try:
         global serial_connection
-        serial_connection = serial.Serial(ports[port_number].device, 115200)
+        serial_connection = serial.Serial(arduino_ports[port_number].device, 115200)
         print("*Successfully opened device port\n")
         return 1
     except Exception as e:
@@ -125,6 +132,7 @@ def main():
 
     sleep(0.1)
     global board_id
+    board_id = get_orientation_data()[0]
     if board_id == "1":
         init_3D_scene("data/TinyZero.glb")
     elif board_id == "2":
