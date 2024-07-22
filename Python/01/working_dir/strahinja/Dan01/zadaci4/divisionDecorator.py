@@ -4,7 +4,7 @@ def validate_division(f):
             raise Exception("Must divide numbers")
         if args[1] == 0:
             raise Exception("Cannot divide by zero")
-        return f(*args, *kwargs)
+        return f(*args, **kwargs)
 
     return fn
 
