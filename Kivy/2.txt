@@ -1,0 +1,12 @@
+Napravit gui aplikaciju "TELEFON" koja ima dugmice sa brojevima u formatu
+	1 (,.?!)		2 (abc)			3 (def)
+	4 (ghi)			5 (jkl)			6 (mno)
+	7 (pqrs)		8 (tuv)			9 (wxyz)
+	*+				0				#
+	
+Pored ovih dugmica potrebno je dodati jos jedno text input polje gdje je moguce unijeti tekst (ili broj)
+ klikovima na dugmice telefona, npr za unos slova r potrebno je kliknuti button 7 tri puta.
+ Pored toga potrebno je dodati jos jedno dugme posalji pomocu kojeg se sav tekst iz textinputa prikazuje u dodatnu labelu.
+ Dodati jos jedan dugmic pomocu kojeg se moze obrisati sav tekst iz text inputa.
+
+Bonus: Dodati jos Istorija button pomocu kojeg ce se ispisati citava istorija poruka koje su poslate.
