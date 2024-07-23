@@ -1,0 +1,14 @@
+	- Napraviti hello world kivy aplikaciju sa jednom labelom preko cijelog prozora
+	- Napraviti 4 kivy aplikacije sa razlicitim layoutima: BoxLayout, GridLayout, RelativeLayout, AnchorLayout,
+		u svakoj od aplikacija ubaciti 5 dugmica (Button widget) i vidjeti kako se ponasaju 
+	- Napraviti aplikaciju koja ima GridLayout sa 2 kolone i 4 reda, 
+		svaki red se sastoji od labele i text input polja, (ime, prezime, godine), zadnji red neka budu button i labela,
+		nakon klika na button vrsi se konketenacija svih labela i polja i prikaz u zadnjoj 
+		labeli (Primjer: Ime Marko Prezim Markovic Godine 99)
+	- Napraviti Jedan Progres Bar i jedan Slider, gdje se na slajderu mogu postaviti vrijednosti izmedju 0-50,
+		a progress bar koji kad istekne 10 sekundi uzima vrijednost
+		koja je na slajderu i prikazuje u labeli, koristiti proizvoljan layout
+	- Napraviti jednu labelu sa nazivom Item i jedno tekstualno polje u koje je moguce unijeti
+		tekst, nakon klika na submit button u grid sa scrollViewom dodati labelu 
+		sa tekstom Labela: {uneseniTekst}. Ograniciti na max broj od 5 karaktera, 
+		ako polje ima vise od 5 uzeti prvih 5. Napuniti scrol view i provjeriti da li funkcionise.
