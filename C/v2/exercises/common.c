@@ -35,6 +35,7 @@ int main(void)
 	int iVar1 = 2147483647;
 	int iVar2 = -2147483648;
 	result = iVar1 - iVar2;
+	printf("%d\n", iVar1+1);
 	printf("%d - %d = %d\n", iVar1, iVar2, result);
 
 	//--------------------------------------------------
@@ -59,7 +60,7 @@ int main(void)
 	int j = -20;
 	if (i + j > 5)
 	{
-		printf(">5 = %d\n", i + j);
+		printf(">5 = %u\n", i + j);
 	}
 	else
 	{
@@ -70,15 +71,16 @@ int main(void)
 
 	printf("\nQuestion 6: ");
 	getchar();
-	int16_t u16a = 30000;
-	int16_t u16b = 30000;
-	int32_t u32x = u16a + u16b;
-	printf("Result is %d \n", u32x);
+	uint16_t u16a = 400000;
+	uint16_t u16b = 300000;
+	uint32_t u32x = u16a + u16b;
+	printf("Result is %u \n", u32x);
 	//--------------------------------------------------
 
 	printf("\nQuestion 7: ");
 	float fVal = 5.0;
 	double dVal;
+	printf("DOUBLE:%d\n", sizeof(double));
 	int iVal = -7;
 	unsigned long ulVal = 1000;
 	getchar();

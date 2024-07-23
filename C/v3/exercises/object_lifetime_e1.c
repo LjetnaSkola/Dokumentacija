@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-int_least8_t foo(int_least8_t x);
+int_least8_t x;
+int_least8_t foo();
 
 int main(void)
 {
 	printf("Local variable scope\n");
-	int_least8_t x;
 
 	x = 42;
 	foo(x);
@@ -16,7 +16,7 @@ int main(void)
 	return EXIT_SUCCESS;
 }
 
-int_least8_t foo(int_least8_t x)
+int_least8_t foo()
 {
 	x = 101;
 	printf("Inside foo: x = %d\n", x);

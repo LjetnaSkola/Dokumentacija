@@ -1,0 +1,4 @@
+mail@mail.com,$2b$12$9wPWuxI4Yi13.sINMx10HudhePXYyLWI4RaHarU5XP1DY2OTa6LCa,1
+mail@mail.com,$2b$12$tAajJN966KMqMl4Oc0YCZOxXD9cN4zp1jbVsKSM/G1f5Rw4s2HKfS,1
+mail@mail.com,$2b$12$urQbrrKstvUtRHw9bWS0/.vxii1LVk5vZD43NUUINCrTaRCmETaYe,1
+mail@mail.com,$2b$12$oS3MLI6z0Th6osBDPC5nGuwR9m2z/lehCOAH8osmWcW0lwn9g64eS,1

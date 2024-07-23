@@ -2,10 +2,7 @@
 #include <stdint.h>
 #include <inttypes.h>
 
-#define TRESHOLD 20
-
-
-void sort(int_least32_t* values, int_least16_t* indexes, int_least16_t n)
+void sort(int_least32_t* const values, int_least16_t* const indexes, int_least16_t n)
 {
 	int_least16_t i;
 	int_least16_t j;
@@ -31,11 +28,11 @@ void sort(int_least32_t* values, int_least16_t* indexes, int_least16_t n)
 }
 
 
-void print(int_least32_t* values, int_least16_t* indexes, int_least16_t n)
+void print(const int_least32_t* const values, const int_least16_t* const indexes, int_least16_t n)
 {
 	int_least16_t i = 0;
 	printf("Up to the first treshold: ");
-	while (values[i] > TRESHOLD && i < n)
+	while (values[i] > 2 && i < n)
 	{
 		printf("%"PRIdLEAST32"(%"PRIdLEAST16") ", values[i], indexes[i]);
 		i++;
@@ -43,13 +40,10 @@ void print(int_least32_t* values, int_least16_t* indexes, int_least16_t n)
 	printf("\n");
 }
 
-
-int_least32_t values[40000];
-int_least16_t indexes[40000];
-
-
 void main()
 {
+int_least32_t values[40000];
+int_least16_t indexes[40000];
 	int_least16_t i;
 	int_least16_t n;
 	
