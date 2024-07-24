@@ -1,0 +1,16 @@
+Napraviti GUI server aplikaciju koja ce imati sledece komponente:
+	- labela koja prikazuje trenutni status servera idle/listening/connected/closed...
+	- button kojim se kreira socket na proizvoljnom portu PORT_NUMBER
+	- button za slanje poruke clientu (disable na pocetku)
+	- posebna labela koja ispisuje zadnju poruku klijenta
+	
+Napraviti GUI client aplikaciju koja ce imati sledece komponente:
+	- labela koja prikazuje trenutni status clienta idle/connected/closed...
+	- button kojim se povezuje sa serverom koji se nalazi na portu PORT_NUMBER
+	
+Nakon klika na button za konekciju klijent svake druge sekunde salje serveru poruku u formatu <x=%d|y=%d> 
+gdje su x i y random int brojevi izmedju 1 i 50 a svake pete sekunde <I=%f>. 
+Server treba da ima mogucnost da prilikom klika na prikazi statistiku dugmeta racuna prosjecnu vrijednost I i iprikazuje u nekoj labeli,
+kao i da prikaze dijagram od zadnjih 10 vrijednosti x i y (y = f(x)) (samo uzeti zadnjih deset vrijednosti i prikazati, ne treba se dinamicki mijenjati).
+Server treba da ima mogucnost da posalje trenutno vrijeme klijentu klikom na dodatno dugme (koje je bilo onemoguceno na pocetku), 
+	klijent to vrijeme ispisuje u konzoli
