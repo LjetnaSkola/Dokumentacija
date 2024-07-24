@@ -1,0 +1,23 @@
+<MyLayout>:
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    Button:
+        text: 'Dugme 1'
+        size_hint: None, None
+        size: 100, 50
+        pos: 20, 800
+        background_color: 1, 1, 0, 1  # žuta boja (RGBA: 1, 1, 0, 1)
+        on_release: root.on_button1_release(self)
+
+    Button:
+        text: 'Dugme 2'
+        size_hint: None, None
+        size: 100, 50
+        pos: 20, 20
+        background_color: 0.5, 0, 0.5, 1  # ljubičasta boja (RGBA: 0.5, 0, 0.5, 1)
+        on_release: root.on_button2_release(self)
