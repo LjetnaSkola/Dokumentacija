@@ -1,0 +1,12 @@
+#:kivy 2.3.0
+
+<HelloWorldLayout>:
+    orientation: 'vertical'
+    
+    Label:
+        id: hello_label
+        text: 'Press the button below'
+        
+    Button:
+        text: 'Click Me!'
+        on_press: root.on_button_click()
