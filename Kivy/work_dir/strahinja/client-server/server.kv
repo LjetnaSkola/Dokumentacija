@@ -1,0 +1,38 @@
+<MainView>:
+    message: message_id
+    status_label: status_label_id
+    start_listening_button: start_listening_button_id
+    send_button: send_button_id
+    last_message_label: last_message_id
+    average_label: average_label_id
+    plot_button: plot_button_id
+
+    orientation: 'vertical'
+
+    Label:
+        id: status_label_id
+        text: 'Status: idle'
+
+    Button:
+        id: start_listening_button_id
+        text: 'Start listening'
+
+    TextInput:
+        id: message_id
+        hint_text: 'Enter message'
+        multiline: False
+
+    Button:
+        id: send_button_id
+        text: 'Send'
+        disabled: True
+
+    Label:
+        id: last_message_id
+        text: 'Last Message: '
+    Label:
+        id: average_label_id
+        text: 'Average I: '
+    Button:
+        id: plot_button_id
+        text: 'Show plot'
