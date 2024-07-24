@@ -1,0 +1,205 @@
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/archy/.kivy/logs/kivy_24-07-24_98.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/archy/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Text        ] Provider: sdl2
+[[1;31mERROR[0m  ] [Input       ] MTDev is not supported by your version of linux
+Traceback (most recent call last):
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/__init__.py", line 41, in <module>
+    import kivy.input.providers.mtdev
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/mtdev.py", line 94, in <module>
+    from kivy.lib.mtdev import Device, \
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/lib/mtdev.py", line 30, in <module>
+    libmtdev = cdll.LoadLibrary('libmtdev.so.1')
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 452, in LoadLibrary
+    return self._dlltype(name)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libmtdev.so.1: cannot open shared object file: No such file or directory
+[[1;32mINFO[0m   ] [Window      ] Provider: sdl2
+[[1;32mINFO[0m   ] [GL          ] Using the "OpenGL" graphics system
+[[1;32mINFO[0m   ] [GL          ] Backend used <sdl2>
+[[1;32mINFO[0m   ] [GL          ] OpenGL version <b'4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.2'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <b'Mesa'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <b'llvmpipe (LLVM 15.0.7, 256 bits)'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 5
+[[1;32mINFO[0m   ] [GL          ] Shading version <b'4.50'>
+[[1;32mINFO[0m   ] [GL          ] Texture max size <16384>
+[[1;32mINFO[0m   ] [GL          ] Texture max units <32>
+[[1;32mINFO[0m   ] [Window      ] auto add sdl2 input provider
+[[1;32mINFO[0m   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+[[1;32mINFO[0m   ] [Base        ] Start application main loop
+[[1;32mINFO[0m   ] [GL          ] NPOT texture support is available
+[[1;32mINFO[0m   ] [Base        ] Leaving application in progress...
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/archy/.kivy/logs/kivy_24-07-24_99.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/archy/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Text        ] Provider: sdl2
+[[1;31mERROR[0m  ] [Input       ] MTDev is not supported by your version of linux
+Traceback (most recent call last):
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/__init__.py", line 41, in <module>
+    import kivy.input.providers.mtdev
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/mtdev.py", line 94, in <module>
+    from kivy.lib.mtdev import Device, \
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/lib/mtdev.py", line 30, in <module>
+    libmtdev = cdll.LoadLibrary('libmtdev.so.1')
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 452, in LoadLibrary
+    return self._dlltype(name)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libmtdev.so.1: cannot open shared object file: No such file or directory
+[[1;32mINFO[0m   ] [Window      ] Provider: sdl2
+[[1;32mINFO[0m   ] [GL          ] Using the "OpenGL" graphics system
+[[1;32mINFO[0m   ] [GL          ] Backend used <sdl2>
+[[1;32mINFO[0m   ] [GL          ] OpenGL version <b'4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.2'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <b'Mesa'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <b'llvmpipe (LLVM 15.0.7, 256 bits)'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 5
+[[1;32mINFO[0m   ] [GL          ] Shading version <b'4.50'>
+[[1;32mINFO[0m   ] [GL          ] Texture max size <16384>
+[[1;32mINFO[0m   ] [GL          ] Texture max units <32>
+[[1;32mINFO[0m   ] [Window      ] auto add sdl2 input provider
+[[1;32mINFO[0m   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+[[1;32mINFO[0m   ] [Base        ] Start application main loop
+[[1;32mINFO[0m   ] [GL          ] NPOT texture support is available
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/archy/.kivy/logs/kivy_24-07-24_100.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/archy/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Text        ] Provider: sdl2
+[[1;31mERROR[0m  ] [Input       ] MTDev is not supported by your version of linux
+Traceback (most recent call last):
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/__init__.py", line 41, in <module>
+    import kivy.input.providers.mtdev
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/mtdev.py", line 94, in <module>
+    from kivy.lib.mtdev import Device, \
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/lib/mtdev.py", line 30, in <module>
+    libmtdev = cdll.LoadLibrary('libmtdev.so.1')
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 452, in LoadLibrary
+    return self._dlltype(name)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libmtdev.so.1: cannot open shared object file: No such file or directory
+[[1;32mINFO[0m   ] [Window      ] Provider: sdl2
+[[1;32mINFO[0m   ] [GL          ] Using the "OpenGL" graphics system
+[[1;32mINFO[0m   ] [GL          ] Backend used <sdl2>
+[[1;32mINFO[0m   ] [GL          ] OpenGL version <b'4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.2'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <b'Mesa'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <b'llvmpipe (LLVM 15.0.7, 256 bits)'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 5
+[[1;32mINFO[0m   ] [GL          ] Shading version <b'4.50'>
+[[1;32mINFO[0m   ] [GL          ] Texture max size <16384>
+[[1;32mINFO[0m   ] [GL          ] Texture max units <32>
+[[1;32mINFO[0m   ] [Window      ] auto add sdl2 input provider
+[[1;32mINFO[0m   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+[[1;32mINFO[0m   ] [GL          ] NPOT texture support is available
+[[1;32mINFO[0m   ] [Clipboard   ] Provider: xclip
+[[1;32mINFO[0m   ] [CutBuffer   ] cut buffer support enabled
+[[1;32mINFO[0m   ] [Base        ] Start application main loop
+[[1;32mINFO[0m   ] [Base        ] Leaving application in progress...
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/archy/.kivy/logs/kivy_24-07-24_0.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/archy/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Text        ] Provider: sdl2
+[[1;31mERROR[0m  ] [Input       ] MTDev is not supported by your version of linux
+Traceback (most recent call last):
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/__init__.py", line 41, in <module>
+    import kivy.input.providers.mtdev
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/mtdev.py", line 94, in <module>
+    from kivy.lib.mtdev import Device, \
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/lib/mtdev.py", line 30, in <module>
+    libmtdev = cdll.LoadLibrary('libmtdev.so.1')
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 452, in LoadLibrary
+    return self._dlltype(name)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libmtdev.so.1: cannot open shared object file: No such file or directory
+[[1;32mINFO[0m   ] [Window      ] Provider: sdl2
+[[1;32mINFO[0m   ] [GL          ] Using the "OpenGL" graphics system
+[[1;32mINFO[0m   ] [GL          ] Backend used <sdl2>
+[[1;32mINFO[0m   ] [GL          ] OpenGL version <b'4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.2'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <b'Mesa'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <b'llvmpipe (LLVM 15.0.7, 256 bits)'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 5
+[[1;32mINFO[0m   ] [GL          ] Shading version <b'4.50'>
+[[1;32mINFO[0m   ] [GL          ] Texture max size <16384>
+[[1;32mINFO[0m   ] [GL          ] Texture max units <32>
+[[1;32mINFO[0m   ] [Window      ] auto add sdl2 input provider
+[[1;32mINFO[0m   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+[[1;32mINFO[0m   ] [GL          ] NPOT texture support is available
+[[1;32mINFO[0m   ] [Clipboard   ] Provider: xclip
+[[1;32mINFO[0m   ] [CutBuffer   ] cut buffer support enabled
+[[1;32mINFO[0m   ] [Base        ] Start application main loop
+[[1;32mINFO[0m   ] [Base        ] Leaving application in progress...
+[[1;32mINFO[0m   ] [Base        ] Leaving application in progress...
+Server listening on 127.0.0.1:8080
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/archy/.kivy/logs/kivy_24-07-24_1.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.3.0
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/archy/.local/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/usr/bin/python3"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 195 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Text        ] Provider: sdl2
+[[1;31mERROR[0m  ] [Input       ] MTDev is not supported by your version of linux
+Traceback (most recent call last):
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/__init__.py", line 41, in <module>
+    import kivy.input.providers.mtdev
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/input/providers/mtdev.py", line 94, in <module>
+    from kivy.lib.mtdev import Device, \
+  File "/home/archy/.local/lib/python3.10/site-packages/kivy/lib/mtdev.py", line 30, in <module>
+    libmtdev = cdll.LoadLibrary('libmtdev.so.1')
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 452, in LoadLibrary
+    return self._dlltype(name)
+  File "/usr/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: libmtdev.so.1: cannot open shared object file: No such file or directory
+[[1;32mINFO[0m   ] [Window      ] Provider: sdl2
+[[1;32mINFO[0m   ] [GL          ] Using the "OpenGL" graphics system
+[[1;32mINFO[0m   ] [GL          ] Backend used <sdl2>
+[[1;32mINFO[0m   ] [GL          ] OpenGL version <b'4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.2'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <b'Mesa'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <b'llvmpipe (LLVM 15.0.7, 256 bits)'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 5
+[[1;32mINFO[0m   ] [GL          ] Shading version <b'4.50'>
+[[1;32mINFO[0m   ] [GL          ] Texture max size <16384>
+[[1;32mINFO[0m   ] [GL          ] Texture max units <32>
+[[1;32mINFO[0m   ] [Window      ] auto add sdl2 input provider
+[[1;32mINFO[0m   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+[[1;32mINFO[0m   ] [GL          ] NPOT texture support is available
+[[1;32mINFO[0m   ] [Clipboard   ] Provider: xclip
+[[1;32mINFO[0m   ] [CutBuffer   ] cut buffer support enabled
+ Traceback (most recent call last):
+   File "/mnt/c/Users/student/Documents/Dokumentacija/Kivy/work_dir/Danilo/04/client.py", line 71, in <module>
+     ClientApp().run()
+   File "/home/archy/.local/lib/python3.10/site-packages/kivy/app.py", line 955, in run
+     self._run_prepare()
+   File "/home/archy/.local/lib/python3.10/site-packages/kivy/app.py", line 925, in _run_prepare
+     root = self.build()
+   File "/mnt/c/Users/student/Documents/Dokumentacija/Kivy/work_dir/Danilo/04/client.py", line 31, in build
+     connect_to_server()
+ NameError: name 'connect_to_server' is not defined
