@@ -1,0 +1,8 @@
+#:kivy 2.3.0
+
+<MyWidget>:
+    Label:
+        text: str(root.value)
+    Button:
+        text: 'Increment'
+        on_release: root.value += 1

@@ -1,0 +1,10 @@
+- Napraviti aplikaciju koja ce imati dva dugmica (relative layout) sa absolutnim pozicijama u gornjem lijevom cosku
+	i donjem lijevom, klikom na prvi dugmic on se pomjera desno i mijenja opacity u isto vrijeme, klikom na donji
+	on se pomjera a nakon toga mijenja opacity, a nakon toga poveca 2x
+	
+- Napraviti Button koji ce imati preko svog standardnog izgleda prelijepljen transparentni rectangle a iza njega obicni 
+	(koristiti canvas before i after)
+	
+- Napraviti mogucnost da se moze crtati po ekranu (olovka), sa dodatkom da se moze preko
+	3 text inputa (ili 3 slidera) specifikovati boja
+	
