@@ -1,0 +1,9 @@
+#:kivy 2.3.0
+
+<BoxLayout>:
+    Button:
+        id: my_button
+        text: "Click Me!"
+        on_press: app.react_on_press(self)
+    Label:
+        text: str(my_button.text)

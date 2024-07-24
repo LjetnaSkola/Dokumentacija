@@ -1,0 +1,42 @@
+import kivy
+from kivy.app import App
+from kivy.uix.label import Label 
+from kivy.uix.button import Button
+from kivy.uix.textinput import TextInput
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.relativelayout import RelativeLayout
+from kivy.uix.anchorlayout import AnchorLayout
+
+class GridLayoutApp(App):
+    def build(self):
+        layout = GridLayout(cols=2, rows=4)
+ 
+        label = ['Ime:', 'Prezime:', 'Godine:']
+        self.inputs = []
+
+        for text in label:
+            layout.add_widget(Label(text=text))
+            input_field = TextInput(multiline=False)
+            self.inputs.append(input_field)
+            layout.add_widget(input_field)
+ 
+        self.result = Label(text='')
+        layout.add_widget(self.result)
+
+        btn = Button(text='SPAJANJE') 
+        btn.bind(on_press=self.on_submit)
+        layout.add_widget(btn)
+
+        # returning the layout
+        return layout
+    
+    def on_submit(self, wtf):
+        # Konkatenacija labela i polja i prikaz u result_label
+        ime = self.inputs[0].text
+        prezime = self.inputs[1].text
+        godine = self.inputs[2].text
+        
+        self.result.text = f'{ime} {prezime} {godine}'
+
+GridLayoutApp().run()
