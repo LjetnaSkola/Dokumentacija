@@ -1,0 +1,25 @@
+
+# myapp.kv
+#:kivy 2.0.0
+
+<AwesomeButton>:
+    canvas.before:
+        Color:
+            rgba: 0, 1, 0, 1  # Green colour (R, G, B, A)
+        Rectangle:
+            pos: 250, 250
+            size: 250, 150
+
+    canvas.after:
+        Color:
+            rgba: 1, 0, 0, 0.5  # Semi-transparent red (R, G, B, A)
+        Rectangle:
+            pos: 250, 250
+            size: 300, 250
+
+    FloatLayout:
+        Button:
+            text: 'Button!'
+            size_hint: None, None
+            size: 200, 200
+            pos: 300, 300
