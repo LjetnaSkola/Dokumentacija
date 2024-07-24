@@ -1,10 +1,11 @@
-from kivy.uix.actionbar import BoxLayout
+from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.stacklayout import StackLayout
-from kivy.uix.actionbar import Label
-from kivy.uix.codeinput import TextInput
-from kivy.uix.actionbar import Button
+from kivy.uix.label import Label
+from kivy.uix.textinput import TextInput
+from kivy.uix.button import Button
 from kivy.uix.gridlayout import GridLayout
-from kivy.uix.accordion import Widget
+from kivy.uix.scrollview import ScrollView
+from kivy.uix.widget import Widget
 from kivy.app import App
 from kivy.clock import Clock
 
@@ -65,12 +66,22 @@ class TelefonApp(App):
         self.events = {}
         self.events_print = {}
         self.buttons = []
+        self.history_messages = []
         self.history = {}
         self.tel = self.telefon()
         self.input = TextInput()
         self.label = Label()
         self.clear = Button(text="Clear", on_press=lambda _: self.do_clear())
         self.send = Button(text="Send", on_press=lambda _: self.do_send())
+        self.show_history = Button(
+            text="Show history", on_press=lambda _: self.toggle_history()
+        )
+
+        self.history_stack = StackLayout(size_hint_y=None)
+        self.history_stack.bind(minimum_height=self.history_stack.setter("height"))
+        self.history_scroll = ScrollView(size_hint=(1, None), height=100)
+        self.history_scroll.add_widget(self.history_stack)
+        self.history_scroll.visible = False
 
         self.box = BoxLayout(orientation="vertical")
         self.box.add_widget(self.tel)
@@ -78,6 +89,8 @@ class TelefonApp(App):
         self.box.add_widget(self.send)
         self.box.add_widget(self.label)
         self.box.add_widget(self.clear)
+        self.box.add_widget(self.show_history)
+        self.box.add_widget(self.history_scroll)
 
         return self.box
 
@@ -86,10 +99,23 @@ class TelefonApp(App):
         self.input.text = ""
         self.input_pos = 0
 
+    def toggle_history(self):
+        self.history_scroll.visible = not self.history_scroll.visible
+        self.history_scroll.height = 100 if self.history_scroll.visible else 0
+
     def do_send(self):
         self.label.text = self.input.text
+        self.history_messages.append(self.input.text)
+        self.update_history()
         self.input.text = ""
         self.input_pos = 0
+
+    def update_history(self):
+        self.history_stack.clear_widgets()
+        for message in self.history_messages:
+            self.history_stack.add_widget(
+                Label(text=message, size_hint_y=None, height=40)
+            )
 
     def debounce(self, commands):
         if commands in self.events and self.events[commands]:
