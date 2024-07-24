@@ -1,0 +1,44 @@
+<DrawingWidget>:
+    orientation: 'vertical'
+
+    Widget:
+        id: draw_space
+        size_hint_y: 0.8
+        canvas.after:
+            Color:
+                rgba: root.current_color + [1]
+            Line:
+                points: []
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 0.2
+        padding: [10, 10, 10, 10]
+        spacing: 10
+
+        Label:
+            text: 'R'
+        Slider:
+            id: slider_r
+            min: 0
+            max: 1
+            value: root.current_color[0]
+            on_value: root.current_color[0] = self.value
+
+        Label:
+            text: 'G'
+        Slider:
+            id: slider_g
+            min: 0
+            max: 1
+            value: root.current_color[1]
+            on_value: root.current_color[1] = self.value
+
+        Label:
+            text: 'B'
+        Slider:
+            id: slider_b
+            min: 0
+            max: 1
+            value: root.current_color[2]
+            on_value: root.current_color[2] = self.value

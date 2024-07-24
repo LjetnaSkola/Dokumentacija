@@ -1,0 +1,43 @@
+<Server>:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    Label:
+        id: status_label
+        text: root.status
+        size_hint_y: 0.1
+
+    Button:
+        id: create_socket_button
+        size_hint: None, None
+        text: 'Create Socket'
+        pos_hint: {'center_x': 0.5}
+        size: 500, 100
+        on_press: root.create_socket()
+
+    Button:
+        id: send_message_button
+        size_hint: None, None
+        text: 'Send Current Time to Client'
+        pos_hint: {'center_x': 0.5}
+        size: 500, 100
+        on_press: root.send_message()
+        disabled: True
+
+    Label:
+        id: last_message_label
+        text: root.last_message
+        size_hint_y: 0.1
+
+    Label:
+        id: average_i_label
+        text: root.average_i
+        size_hint_y: 0.1
+
+    Button:
+        size_hint: None, None
+        text: 'Show Statistics'
+        pos_hint: {'center_x': 0.5}
+        size: 500, 100
+        on_press: root.show_statistics()

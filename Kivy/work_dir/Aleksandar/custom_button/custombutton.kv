@@ -1,0 +1,17 @@
+<CustomButton>:
+    size_hint: None, None
+    size: 200, 100
+    text: "Click me"
+    pos : 200, 100
+    canvas.before:
+        Color:
+            rgba: 0, 1, 0, 0.8
+        Rectangle:
+            pos: self.pos[0] - 20, self.pos[1] - 20
+            size: self.size[0] + 40, self.size[1] + 40
+    canvas.after:
+        Color:
+            rgba: 1, 0, 0, 0.4
+        Rectangle:
+            pos: self.pos[0] + 10, self.pos[1] + 10
+            size: self.size[0] - 20, self.size[1] - 20

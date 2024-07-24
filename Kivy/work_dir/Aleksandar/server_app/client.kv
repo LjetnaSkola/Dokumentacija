@@ -1,0 +1,20 @@
+<Client>:
+    orientation: 'vertical'
+    spacing: 10
+
+    Label:
+        id: status_label
+        text: root.status
+        size_hint_y: 0.1
+
+    Button:
+        size_hint: None, None
+        text: 'Connect to Server'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        size: 500, 100
+        on_press: root.connect_to_server()
+
+    Label:
+        id: received_message_label
+        text: 'Received Message: '
+        size_hint_y: 0.1
