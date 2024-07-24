@@ -1,0 +1,48 @@
+from kivy.app import App
+from kivy.uix.relativelayout import RelativeLayout
+from kivy.uix.button import Button
+from kivy.animation import Animation
+
+
+class MyRelativeLayout(RelativeLayout):
+
+    def __init__(self, **kwargs):
+        super(MyRelativeLayout, self).__init__(**kwargs)
+
+        self.button1 = Button(text='Button 1',
+                              size_hint=(None, None), size=(100, 50),
+                              pos=(50, 300), background_color=(1, 0, 0, 1))
+        self.add_widget(self.button1)
+
+        # Dugme 2 - donji lijevi kut
+        self.button2 = Button(text='Button 2',
+                              size_hint=(None, None), size=(100, 50),
+                              pos=(50, 50),  background_color=(0, 0, 1, 1))
+        self.add_widget(self.button2)
+
+        # Postavljanje funkcionalnosti za dugme 1
+        self.button1.bind(on_press=self.move_and_fade_button1)
+
+        # Postavljanje funkcionalnosti za dugme 2
+        self.button2.bind(on_press=self.move_fade_and_scale_button2)
+
+    def move_and_fade_button1(self, instance):
+        anim = Animation(x=250, opacity=0.5, duration=3)
+        anim += Animation(x=0, opacity=0, duration=3)
+        anim.start(self.button1)
+
+    def move_fade_and_scale_button2(self, instance):
+        anim = Animation(x=250, opacity=1, duration=3)
+        anim += Animation(x=0, opacity=0.5, duration=2)
+        anim += Animation(size=(200, 100), duration=0.5)
+        anim.start(self.button2)
+
+
+class MyApp(App):
+
+    def build(self):
+        return MyRelativeLayout()
+
+
+
+MyApp().run()
