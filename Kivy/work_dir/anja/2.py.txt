@@ -1,0 +1,83 @@
+# boxlayout_app.py
+import kivy
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.relativelayout import RelativeLayout
+from kivy.uix.anchorlayout import AnchorLayout
+
+class BoxLayoutApp(App):
+    def build(self):
+        layout = BoxLayout(orientation='vertical')
+        
+        btn1 = Button(text='Button 1')
+        layout.add_widget(btn1)
+        btn2 = Button(text='Button 2')
+        layout.add_widget(btn2)
+        btn3 = Button(text='Button 3')
+        layout.add_widget(btn3)
+        btn4 = Button(text='Button 4')
+        layout.add_widget(btn4)
+        btn5 = Button(text='Button 5')
+        layout.add_widget(btn5)
+        
+        return layout
+    
+class GridLayoutApp(App):
+    def build(self):
+        layout = GridLayout(cols = 3)
+ 
+        btn1 = Button(text='Button 1')
+        layout.add_widget(btn1)
+        btn2 = Button(text='Button 2')
+        layout.add_widget(btn2)
+        btn3 = Button(text='Button 3')
+        layout.add_widget(btn3)
+        btn4 = Button(text='Button 4')
+        layout.add_widget(btn4)
+        btn5 = Button(text='Button 5')
+        layout.add_widget(btn5)
+ 
+        # returning the layout
+        return layout
+
+class RelativeLayoutApp(App):
+    def build(self):
+        layout = RelativeLayout()
+ 
+        b1 = Button(pos_hint={'x': .1, 'center_y': .1}, size_hint=(.1, .1),text= '1')
+        b2 = Button(pos_hint={'x': .2, 'center_y': .1}, size_hint=(.1, .1),text= '2')
+        b3 = Button(pos_hint={'x': .3, 'center_y': .1}, size_hint=(.1, .1),text= '3')
+        b4 = Button(pos_hint={'x': .4, 'center_y': .1}, size_hint=(.1, .1),text= '4')
+        b5 = Button(pos_hint={'x': .5, 'center_y': .1}, size_hint=(.1, .1),text= '5')
+        layout.add_widget(b1)
+        layout.add_widget(b2)
+        layout.add_widget(b3)
+        layout.add_widget(b4)
+        layout.add_widget(b5)
+ 
+        # returning the layout
+        return layout
+
+class AnchorLayoutApp(App):
+    def build(self):
+        layout = AnchorLayout()
+        
+        b1 = Button(pos_hint={'x': .1, 'center_y': .1}, size_hint=(.1, .1),text= '1')
+        b2 = Button(pos_hint={'x': .2, 'center_y': .1}, size_hint=(.1, .1),text= '2')
+        b3 = Button(pos_hint={'x': .3, 'center_y': .1}, size_hint=(.1, .1),text= '3')
+        b4 = Button(pos_hint={'x': .4, 'center_y': .1}, size_hint=(.1, .1),text= '4')
+        b5 = Button(pos_hint={'x': .5, 'center_y': .1}, size_hint=(.1, .1),text= '5')
+        layout.add_widget(b1)
+        layout.add_widget(b2)
+        layout.add_widget(b3)
+        layout.add_widget(b4)
+        layout.add_widget(b5)
+        
+        return layout
+    
+#BoxLayoutApp().run()
+#GridLayoutApp().run()
+#RelativeLayoutApp().run()
+AnchorLayoutApp().run()

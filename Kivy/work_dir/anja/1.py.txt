@@ -1,0 +1,13 @@
+import kivy 
+from kivy.app import App 
+from kivy.uix.label import Label 
+
+class MyFirstKivyApp(App): 
+	
+	# Function that returns 
+	# the root widget 
+	def build(self): 
+		# Label with text Hello World is 
+		# returned as root widget 
+		return Label(text='Hello world', font_size='100sp')	  
+MyFirstKivyApp().run()			 

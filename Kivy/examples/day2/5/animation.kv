@@ -1,0 +1,18 @@
+#:kivy 2.3.0
+
+<MyLayout>
+   BoxLayout:
+      orientation: "vertical"
+      size: root.width, root.height
+      padding: 50
+      spacing: 20
+      Label:
+         id: my_label
+         text: "Hello World!"
+         font_size: 32
+      Button:
+         text: "Start"
+         font_size: 32
+         size_hint: .5, .5
+         pos_hint: {"center_x": 0.5}
+         on_release: root.animating(self)
