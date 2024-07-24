@@ -1,23 +1,27 @@
-<MyLayout>:
-    canvas:
+<MyButton>:
+    canvas.before:
         Color:
-            rgba: 1, 1, 1, 1
+            rgba: 0.5, 0.5, 0.5, 1  # siva boja za pozadinu
         Rectangle:
-            size: self.size
-            pos: self.pos
+            size: 50, 50
+            pos: 100, 100
 
-    Button:
-        text: 'Dugme 1'
-        size_hint: None, None
-        size: 100, 50
-        pos: 20, 800
-        background_color: 1, 1, 0, 1  # žuta boja (RGBA: 1, 1, 0, 1)
-        on_release: root.on_button1_release(self)
+    canvas.after:
+        Color:
+            rgba: 1, 1, 1, 1  # inicijalno transparentna plava boja
+        Rectangle:
+            size: 50, 50
+            pos: 100, 100
 
-    Button:
-        text: 'Dugme 2'
-        size_hint: None, None
-        size: 100, 50
-        pos: 20, 20
-        background_color: 0.5, 0, 0.5, 1  # ljubičasta boja (RGBA: 0.5, 0, 0.5, 1)
-        on_release: root.on_button2_release(self)
+    text: 'Transparentno Dugme'
+    size_hint: None, None
+    size: 10, 10
+    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+    on_release:
+        root.canvas.after.clear()
+        Color:
+            rgba: 1, 1, 1, 1  #
+        Rectangle:
+            size: 25, 25
+            pos: 120, 120
