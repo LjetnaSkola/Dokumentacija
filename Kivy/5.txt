@@ -1,0 +1,12 @@
+-  Pogledati kod sa https://kivy.org/doc/stable/examples/gen__3Drendering__main__py.html, pokusati kod sebe primjer, tako da se dobije
+	rotiranje modela oko svoje ose.
+	
+-  Analizirati kod unutar render fajla, pokusati shvatiti neke bitnije funkcionalnosti, 
+	prije svega oko rotacije i translacije kako funkcionisu (ne treba detaljno prelaziti sav kod iz primjera)
+	
+-  Napraviti novi App sa relativnim layoutom, zatim importovati render fajl i iz njega koristiti Renderer komponentu, 
+	pomocu Renderer komponente iz render fajla prikazati model sa rotacijom
+	
+-  Dodati button u prethodno postavljeni relativni layout (donji lijevi ugao),
+	pomocu kojeg se na klik mijenja smjer rotacije modela
+
