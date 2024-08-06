@@ -1,0 +1,29 @@
+<MainView>:
+    status_label: status_label_id 
+    connect_button: connect_button_id 
+    time_label: time_label_id 
+    orientation: 'vertical'
+
+    Label:
+        id: status_label_id
+        text: 'Idle'
+        size_hint_y: None
+        height: 30
+
+    BoxLayout:
+        size_hint_y: None
+        height: 50
+        padding: [10, 10]
+        spacing: 10
+        
+        Button:
+            id: connect_button_id
+            text: 'Connect'
+            on_press: root.connect_to_server()
+    
+    Label:
+        id: time_label_id
+        text: 'Server Time: N/A'
+        size_hint_y: None
+        height: 30
+        padding: [10, 10]
